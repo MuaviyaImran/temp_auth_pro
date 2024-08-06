@@ -1,7 +1,6 @@
 <script setup>
 const signInWithGoogle = () => {
   const client_id = import.meta.env.VITE_GOOGLE_CLIENT_ID;
-  console.log(client_id);
   gapi.load("client:auth2", async function () {
     const auth = await gapi.auth2.init({
       client_id: client_id,
